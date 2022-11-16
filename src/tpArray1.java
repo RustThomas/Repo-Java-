@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class tpArray1 {
     public static void main(String[] args) {
 //
+        // 1. Permettre à l'utilisateur de définir le nombres des notes à stocker
+//        - La valeur doit toujours être > 0
 
         Scanner input = new Scanner(System.in);
         int length;
@@ -13,8 +15,7 @@ public class tpArray1 {
             length = input.nextInt();
         } while (length <= 0);
 
-        // 1. Permettre à l'utilisateur de définir le nombres des notes à stocker
-//        - La valeur doit toujours être > 0
+
 
         double notes[] = new double[length];
         int k;
@@ -24,7 +25,7 @@ public class tpArray1 {
 
         for (int i = 0; i < length; i++) {
             do {
-                System.out.printf("Entrez la %d-ième note : ", i);
+                System.out.printf("Entrez la %d-ième note : ", i+1);
                 k = input.nextInt();
 
             } while (k < 0 || k > 20);
