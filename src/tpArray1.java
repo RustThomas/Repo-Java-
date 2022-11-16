@@ -23,6 +23,8 @@ public class tpArray1 {
 // 2. Permettre à l'utilisateur d'entrer les notes du tableau à partir du clavier
 //        - Les valeurs ne doivent être qu'entre 0 et 20
 
+        // Note : Christian suggère DRY avec while(true) continue, break;
+
         for (int i = 0; i < length; i++) {
             int note;
             do {
