@@ -1,5 +1,9 @@
 public class tpArray2 {
     public static void main(String[] args) {
+
+        // on pourrait la remplir aléatoirement !
+        //exemple
+
         double[][] matrice = { {1,2,3}, {3,4,5}, {6,7,8} };
 
         for(int i=0; i<matrice.length ;i++) {
