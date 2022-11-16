@@ -1,6 +1,9 @@
 public class tpArray2 {
     public static void main(String[] args) {
 
+
+        //utiliser une boucle ! + autre diagonale simplement indice longeur j, -1 a chaque fois
+
         // on pourrait la remplir aléatoirement !
         //exemple
 
