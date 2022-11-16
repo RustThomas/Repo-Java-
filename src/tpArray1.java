@@ -26,7 +26,7 @@ public class tpArray1 {
         // Note : Christian suggère DRY avec while(true) continue, break;
 
         for (int i = 0; i < length; i++) {
-            int note;
+            double note;
             do {
                 System.out.printf("Entrez la %d-ième note (entre 0 et 20) : ", i+1);
                 note = input.nextInt();
