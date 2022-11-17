@@ -5,7 +5,7 @@ public class tpVectorsArrays3 {
         Scanner kb = new Scanner(System.in);
         System.out.print("Saisissez un texte : ");
 
-        String texte = kb.next();
+        String texte = kb.next().replaceAll("\\s+","");
         boolean palindrome = true;
 
 //        for(int i=texte.length()-1;i>=0;i--) {
