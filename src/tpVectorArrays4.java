@@ -12,7 +12,7 @@ public class tpVectorArrays4 {
 
         do {
             System.out.print("Saisissez un langage (q pour terminer, autre touche+Entrée sinon) : ");
-            String language = kb.next();
+            String language = kb.next().toLowerCase();
             if(language.equals("q")) break;
             liste.add(language);
 
@@ -27,7 +27,7 @@ public class tpVectorArrays4 {
 
         do {
             System.out.print("Saisissez un langage à supprimer (q pour terminer, autre touche+Entrée sinon) : ");
-            String language = kb.next();
+            String language = kb.next().toLowerCase();
             if(language.equals("q")) break;
             //optionnel
             if(!liste.contains(language)) System.out.printf("%s n'est pas dans la liste ! ", language);
@@ -41,7 +41,7 @@ public class tpVectorArrays4 {
             liste.remove(s);
         }
 
-        System.out.println(liste);
+        System.out.print(liste);
 
     }
 }
