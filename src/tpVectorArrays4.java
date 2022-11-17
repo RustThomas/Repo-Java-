@@ -13,8 +13,9 @@ public class tpVectorArrays4 {
         do {
             System.out.print("Saisissez un langage (q pour terminer, autre touche+Entrée sinon) : ");
             String language = kb.next();
-            liste.add(language);
             if(language.equals("q")) break;
+            liste.add(language);
+
              //on suppose pas besoin que nom soit unique; sinon check si dedans,
              //peut etre hashmap?
 
