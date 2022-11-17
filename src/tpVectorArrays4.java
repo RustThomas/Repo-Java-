@@ -6,6 +6,8 @@ public class tpVectorArrays4 {
 
         ArrayList<String> liste = new ArrayList<String>();
 
+        //lol
+
         Scanner kb = new Scanner(System.in);
 
         do {
