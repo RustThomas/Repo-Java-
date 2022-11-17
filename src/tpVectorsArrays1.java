@@ -9,6 +9,7 @@ public class tpVectorsArrays1 {
 
         String texte = kb.next();
 
+
         HashMap<Character, Integer> occurences = new HashMap<>();
 
         //whitespaces?
@@ -19,12 +20,16 @@ public class tpVectorsArrays1 {
         for (int i = 0; i < texte.length(); i++) {
             if (occurences.containsKey(texte.charAt(i))) {
 
+
                 occurences.replace(texte.charAt(i), occurences.get(texte.charAt(i)) + 1);
             } else {
                 occurences.put(texte.charAt(i), 1);
 
             }
 
+            // aa
+            // 1er tour de la boucle a -> 1
+            // deuxieme a -> 2
 
         }
 
