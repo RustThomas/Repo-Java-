@@ -10,9 +10,16 @@ public class tpVectorsArrays2 {
         System.out.printf("\nVotre chaîne : %s \n",texte);
         System.out.print("Résultat : ");
 
+        String reverse= "";
+
 
         for(int i=texte.length()-1;i>=0;i--) {
-            System.out.print(texte.charAt(i));
+            char c= texte.charAt(i);
+            reverse+= c;
+
+            System.out.print(c);
         }
+
+        System.out.printf("\n%s",reverse);
     }
 }
