@@ -17,7 +17,7 @@ public class patient {
 
     //Getters
     public void donnees(){
-        System.out.printf("Patient : %s \nTaille : %.2f \nPoids : %.2f \nIMC : %.2f \n",this.name,this.taille,this.poids,this.imc);
+        System.out.printf("Patient : %s \nTaille : %.2f m \nPoids : %.2f kg \nIMC : %.2f \n",this.name,this.taille,this.poids,this.imc);
     }
 
     public void getPoids() {
