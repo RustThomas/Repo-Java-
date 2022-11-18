@@ -29,12 +29,24 @@ public class patient {
     }
 
     //Setters?
+    public void setTaille(double Taille) {
+        this.taille = Taille;
+        this.imc = this.poids/(Math.pow(this.taille,2));
+    }
+
+    public void setPoids(double Poids) {
+        this.poids = Poids;
+        this.imc = this.poids/(Math.pow(this.taille,2));
+    }
 
     public static void main(String[] args) {
         patient patient1 = new patient("Jackie Chan",1.75,70);
         patient1.donnees();
         patient1.getPoids();
         patient1.getTaille();
+        patient1.setPoids(95);
+        patient1.donnees();
+
     }
 
 }
