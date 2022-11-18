@@ -8,6 +8,10 @@ public class tpfunction1f2 {
 
         //Et si on dépasse -> erreur out of bound. Gérer ou non.
 
+        //ajouter lowerCase si on ne veut que vérifier les lettres et pas majuscules
+        premier = premier.toLowerCase();
+        check =check.toLowerCase();
+
         for (int i = 0; i < check.length(); i++) {
             if(premier.charAt(i)!=check.charAt(i)) return false;
         }
@@ -71,6 +75,7 @@ public class tpfunction1f2 {
 
         System.out.println(isPrefix("banner", "bang"));
         System.out.println(isPrefix("hugging", "hug"));
+        System.out.println(isPrefix("hugging", "Hug"));
         //System.out.println(isPrefix("hugging", "hugginger"));
 
         double[][] test = new double[3][];
