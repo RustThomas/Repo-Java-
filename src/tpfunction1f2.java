@@ -61,7 +61,8 @@ public class tpfunction1f2 {
                 case "droite":
                     x += 1;
                     break;
-
+                default  :
+                    System.out.println("Nope");
             }
         }
 
