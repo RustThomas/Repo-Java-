@@ -7,16 +7,7 @@ public class souris {
     private int esperance;
     private boolean clonee;
 
-    public souris(int poids, String couleur, int age, int esperance){
-        this.poids=poids;
-        this.couleur=couleur;
-        this.age=age;
-        this.esperance=esperance;
-        System.out.print("Une nouvelle souris !\n");
 
-        System.out.printf("Test esperance %d \n",this.esperance);
-
-    }
 
     public souris(int poids, String couleur){
         this.poids=poids;
@@ -35,10 +26,11 @@ public class souris {
         this.esperance=  (int)(0.8* (double)souris.esperance);
         this.clonee = true;
 
-        System.out.printf("Test esperance %d \n",this.esperance);
     }
 
     public String toString() {
+
+        //ou opérateur ternaire
 
         String output="";
         output+="Une souris "+this.couleur;
@@ -53,13 +45,11 @@ public class souris {
     }
 
     public void vieillir(){
-        System.out.println("in vieillir");
         this.age+=1;
-        if (this.age>this.esperance/2) this.couleur="verte";
+        if (this.clonee && this.age>this.esperance/2) this.couleur="verte";
     }
 
     public void evolue(){
-        System.out.printf("in evolue age %d ;esperance %d\n",this.age,this.esperance);
         while (this.age<this.esperance){
 
             this.vieillir();
@@ -69,7 +59,7 @@ public class souris {
 
     public static void main(String[] args) {
         souris mike = new souris(50,"violette");
-        souris rambo = new souris(1000,"rouge",0,1000);
+        souris rambo = new souris(1000,"rouge");
         souris cloneRambo = new souris(rambo);
         System.out.println(mike);
         System.out.println(cloneRambo);
