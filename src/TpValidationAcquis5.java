@@ -26,16 +26,24 @@ public class TpValidationAcquis5 {
             if(count.containsKey(ArrayListMots.get(i)))  {
                // System.out.println("in");
 
-                if(!doublons.containsValue(ArrayListMots.get(i))) doublons.put(ArrayListMots.get(i),1);
+                if(!doublons.containsKey(ArrayListMots.get(i))) doublons.put(ArrayListMots.get(i),1);
 
-                else doublons.put(ArrayListMots.get(i), doublons.get(ArrayListMots.get(i))+1);
+                else {
+                    //System.out.println("in");
+                    doublons.put( ArrayListMots.get(i), doublons.get(ArrayListMots.get(i)) +1);
+                }
 
                 ArrayListMots.remove(i);
+
+                //jumping one word ?
+                i--;
             }
             else {
                 count.put(ArrayListMots.get(i),i);
             }
         }
+
+        System.out.println(ArrayListMots);
 
         String sansDoublon="";
 
@@ -45,7 +53,7 @@ public class TpValidationAcquis5 {
 
         //String listeDoublons="";
 
-        System.out.printf("Chaîne initiale : %s\nChaîne sans doublons : %s\nDoublons : ",phrase,sansDoublon);
+        System.out.printf("Chaîne initiale : %s\nChaîne sans doublons : %s\nDoublons : \n",phrase,sansDoublon);
         for (String s: doublons.keySet()) {
 
             int value = doublons.get(s);
