@@ -26,7 +26,8 @@ public class TpValidationAcquis1 {
         int minIndex=0;
         for(int i=1;i<entiers.length;i++) {
             if(entiers[i]>entiers[maxIndex]) maxIndex=i;
-            else if(entiers[i]<entiers[minIndex]) minIndex=i;
+            //else if avant, Christian conseille if if
+            if(entiers[i]<entiers[minIndex]) minIndex=i;
 
         }
         System.out.print("[");
@@ -41,7 +42,7 @@ public class TpValidationAcquis1 {
 
         }
         System.out.print(" ]\n");
-        System.out.printf("Plus grand : %d\nPlus petit : %d\n", entiers[maxIndex], entiers[minIndex]);
+        System.out.printf("Plus grand : %d à la position %d\nPlus petit : %d à la position %d\n", entiers[maxIndex],maxIndex, entiers[minIndex],minIndex);
     }
 
 }
