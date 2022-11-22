@@ -25,8 +25,12 @@ public class TpValidationAcquis5 {
         for(int i=0; i<ArrayListMots.size() ;i++) {
             if(count.containsKey(ArrayListMots.get(i)))  {
                // System.out.println("in");
+
+                if(!doublons.containsValue(ArrayListMots.get(i))) doublons.put(ArrayListMots.get(i),1);
+
+                else doublons.put(ArrayListMots.get(i), doublons.get(ArrayListMots.get(i))+1);
+
                 ArrayListMots.remove(i);
-                doublons.put(ArrayListMots.get(i), doublons.get(ArrayListMots.get(i))+1);
             }
             else {
                 count.put(ArrayListMots.get(i),i);
