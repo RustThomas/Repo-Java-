@@ -27,7 +27,7 @@ public class TpValidationAcquis1 {
         for(int i=1;i<entiers.length;i++) {
             if(entiers[i]>entiers[maxIndex]) maxIndex=i;
             //else if avant, Christian conseille if if
-            if(entiers[i]<entiers[minIndex]) minIndex=i;
+            else if(entiers[i]<entiers[minIndex]) minIndex=i;
 
         }
         System.out.print("[");
