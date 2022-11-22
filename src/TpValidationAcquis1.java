@@ -40,7 +40,8 @@ public class TpValidationAcquis1 {
 
 
         }
-        System.out.print(" ]");
+        System.out.print(" ]\n");
+        System.out.printf("Plus grand : %d\nPlus petit : %d\n", entiers[maxIndex], entiers[minIndex]);
     }
 
 }
