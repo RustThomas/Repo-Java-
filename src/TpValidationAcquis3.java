@@ -10,11 +10,13 @@ public class TpValidationAcquis3 {
         //enlever espaces ?
 
         System.out.print("Premier mot : ");
-        String premierMot = kb.next().toLowerCase();
+        String premierMot = kb.nextLine().toLowerCase().replaceAll("\\s", "");
+        //premierMot = premierMot.replaceAll("\\s", "");
         char[] lettres1 = premierMot.toCharArray();
 
         System.out.print("\nDeuxième mot : ");
-        String secondMot = kb.next().toLowerCase();
+        String secondMot = kb.nextLine().toLowerCase().replaceAll("\\s", "");
+        //secondMot = secondMot.replaceAll("\\s", "");
         char[] lettres2 = secondMot.toCharArray();
 
         HashMap<Character,Integer> count1 = new HashMap<Character,Integer>();
@@ -23,7 +25,7 @@ public class TpValidationAcquis3 {
         for(char c:lettres1){
             if(count1.containsKey(c)) count1.put(c, count1.get(c)+1);
             else count1.put(c,1);
-            System.out.println("in");
+            //System.out.println("in");
         }
 
         for(char c:lettres2){
