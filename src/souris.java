@@ -28,6 +28,10 @@ public class souris {
 
     }
 
+    public int getESPERANCE_VIE_DEFAUT() {
+        return ESPERANCE_VIE_DEFAUT;
+    }
+
     public String toString() {
 
         //ou opérateur ternaire
