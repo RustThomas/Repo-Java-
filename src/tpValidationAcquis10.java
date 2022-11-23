@@ -28,7 +28,8 @@ public class tpValidationAcquis10 {
     public static void main(String[] args) {
 
         int[] nombres = new int[]{2,7,11,15};
-        maMethode(nombres, 9);
+        ArrayList<int[]> resultat = new ArrayList<int[]>(maMethode(nombres, 9));
+        System.out.println(Arrays.deepToString(resultat.toArray()));
     }
 
 }
